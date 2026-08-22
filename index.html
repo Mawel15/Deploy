@@ -3,491 +3,354 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Personal Web Portfolio of a Junior Web Developer"
-    />
     <title>Carlos Manuel Castillo | Junior Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="portfolio-body">
-    <div class="honeycomb-background"></div>
-    <div class="glow-shape glow-top-left"></div>
-    <div class="glow-shape glow-middle-right"></div>
-    <div class="glow-shape glow-bottom-left"></div>
+  <body>
+    <!-- Reserved Clean Background Image Layer (No Glow Blobs) -->
+    <div class="bg-layer"></div>
 
-    <header class="header">
-      <div class="container nav-container">
-        <a href="#home" class="nav-logo"> Carlos Manuel Castillo </a>
-
-        <ul class="nav-menu" id="nav-menu">
-          <li class="nav-item">
-            <a href="#home" class="nav-link active">Home</a>
-          </li>
-          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-          <li class="nav-item">
-            <a href="#skills" class="nav-link">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a href="#projects" class="nav-link">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-        </ul>
-
-        <button
-          class="nav-toggle"
-          id="nav-toggle"
-          aria-label="Toggle navigation menu"
-          aria-expanded="false"
-          aria-controls="nav-menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+    <!-- Header Navigation -->
+    <header class="header glass">
+      <div class="container nav-wrap">
+        <a href="#home" class="logo">Carlos<span> Manuel </span> Castillo</a>
+        <nav class="nav-links" id="nav-menu">
+          <a href="#home" class="nav-item active">Home</a>
+          <a href="#about" class="nav-item">About</a>
+          <a href="#skills" class="nav-item">Skills</a>
+          <a href="#projects" class="nav-item">Projects</a>
+          <a href="#contact" class="nav-item">Contact</a>
+        </nav>
+        <div class="nav-status">
+          <span class="status-pill glass"
+            ><span class="dot"></span> Open to Work</span
+          >
+          <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Menu">
+            <span></span><span></span>
+          </button>
+        </div>
       </div>
     </header>
 
-    <main>
+    <main class="container">
       <!-- =================================================
-         SECTION 1 — HOME / HERO
-         ================================================= -->
-      <section class="hero section" id="home">
-        <div class="container hero-container">
-          <div class="hero-content">
-            <div class="badge">
-              <span class="pulse-dot"></span> Available for New Opportunities
-            </div>
-            <h1 class="hero-title">
-              Junior Front-End
-              <span class="highlight">Web Developer</span>
-            </h1>
-            <h2 class="hero-subtitle">
-              Hi, I'm <strong>Carlos Manuel Castillo</strong> — Junior Web
-              Developer
-            </h2>
-            <p class="hero-description">
-              I build responsive and user-friendly websites using HTML, CSS, and
-              JavaScript. I'm continuously improving my front-end development
-              skills through hands-on learning and practical experience.
-            </p>
-            <div class="hero-buttons">
-              <a href="#projects" class="btn btn-primary btn-large"
-                >View My Work</a
-              >
-              <a href="#contact" class="btn btn-secondary btn-large"
-                >Get in Touch</a
-              >
-            </div>
-          </div>
+           HERO SECTION
+           ================================================= -->
+      <section class="section hero reveal" id="home">
+        <div class="hero-left glass">
+          <span class="tag">⚡ Junior Front-End Developer</span>
+          <h1 class="hero-title">
+           Junior Front-End
 
-          <div class="hero-card-wrapper">
-            <div class="hero-avatar-card glass">
-              <div class="avatar-glow"></div>
-              <div class="avatar-circle">
-                <img
-                  src="assets/mawel.png"
-                  alt="Carlos Manuel Castillo"
-                />
-              </div>
-              <div class="hero-card-info">
-                <h3>Carlos Manuel Castillo</h3>
-                <p>Front-End Developer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            <span class="accent">Web Developer</span>.
+          </h1>
+          <p class="hero-desc">
+            Hi, I'm <strong>Carlos Manuel Castillo</strong> I build responsive and user-friendly websites using HTML, CSS, and
+            JavaScript. I'm continuously improving my front-end development
+            skills through hands-on learning and practical experience.
 
-      <!-- =================================================
-         SECTION 2 — ABOUT
-         ================================================= -->
-      <section class="about section" id="about">
-        <div class="container about-container">
-          <div class="section-header">
-            <h2 class="section-title">About <span>Me</span></h2>
-            <p class="section-subtitle">
-              My journey, background, and dedication to web development
-            </p>
-          </div>
-
-          <div class="about-grid">
-            <div class="about-card glass">
-              <div class="card-icon">🚀</div>
-              <h3 class="about-heading">My Background</h3>
-              <p>
-                I'm a junior front-end web developer focused on HTML, CSS, and
-                JavaScript. I enjoy building responsive interfaces and improving
-                my understanding of web development through hands-on practice.
-                I'm also interested in IT support, troubleshooting, and learning
-                how web technologies work in real-world environments.
-              </p>
-            </div>
-
-            <div class="about-card glass">
-              <div class="card-icon">🎯</div>
-              <h3 class="about-heading">My Career Goals</h3>
-              <p>
-                My goal is to continuously improve my skills and become a
-                well-rounded front-end developer. I’m committed to learning,
-                gaining practical experience, and building clean, responsive,
-                and user-friendly web experiences. I’m also open to learning new
-                tools and technologies that can help me grow as a developer and
-                improve the quality of my work.
-              </p>
-              <div class="about-details">
-                <div class="detail-item">
-                  <strong>Location:</strong> Remote / On-site
-                </div>
-                <div class="detail-item">
-                  <strong>Primary Tech:</strong> HTML5, CSS3, JavaScript
-                </div>
-                <div class="detail-item">
-                  <strong>Current Focus:</strong> Web Performance &amp; UI
-                  Design
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- =================================================
-         SECTION 3 — SKILLS
-         ================================================= -->
-      <section class="skills section" id="skills">
-        <div class="container skills-container">
-          <div class="section-header">
-            <h2 class="section-title">Technical <span>Skills</span></h2>
-            <p class="section-subtitle">
-              Core technologies and practical tools I use regularly
-            </p>
-          </div>
-
-          <div class="skills-grid">
-            <div class="skill-card glass">
-              <div class="skill-icon">🌐</div>
-              <h3 class="skill-name">HTML5</h3>
-              <p class="skill-desc">
-                Semantic HTML, clean document structure, forms, and
-                accessibility basics.
-              </p>
-            </div>
-
-            <div class="skill-card glass">
-              <div class="skill-icon">🎨</div>
-              <h3 class="skill-name">CSS3</h3>
-              <p class="skill-desc">
-                Responsive layouts using Flexbox and Grid, with basic animations
-                and modern UI styling.
-              </p>
-            </div>
-
-            <div class="skill-card glass">
-              <div class="skill-icon">⚡</div>
-              <h3 class="skill-name">JavaScript</h3>
-              <p class="skill-desc">
-                Learning JavaScript fundamentals, DOM manipulation, events,
-                functions, and interactive web features.
-              </p>
-            </div>
-
-            <div class="skill-card glass">
-              <div class="skill-icon">📱</div>
-              <h3 class="skill-name">Responsive Web Design</h3>
-              <p class="skill-desc">
-                Creating websites that adapt to different screen sizes, from
-                mobile devices to desktop monitors.
-              </p>
-            </div>
-
-            <div class="skill-card glass">
-              <div class="skill-icon">🛠️</div>
-              <h3 class="skill-name">IT &amp; Troubleshooting</h3>
-              <p class="skill-desc">
-                Basic computer hardware, networking, software troubleshooting,
-                and IT support.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- =================================================
-     SECTION 4 — PROJECTS
-     ================================================= -->
-      <section class="projects section" id="projects">
-        <div class="container projects-container">
-          <div class="section-header">
-            <h2 class="section-title">Featured <span>Projects</span></h2>
-            <p class="section-subtitle">
-              Projects I have worked on while developing my technical skills.
-            </p>
-          </div>
-
-          <!-- Centered single card grid -->
-          <div class="projects-grid">
-            <article class="custom-project-card">
-              <!-- Project Icon -->
-              <div class="custom-project-preview">
-                <img src="assets/icon.png" alt="Mobile Knowledge Hub Icon" />
-              </div>
-
-              <!-- Project Content Body -->
-              <div class="custom-project-body">
-                <p>Full Stack</p>
-                <h3 class="custom-project-title">Mobile Knowledge Hub</h3>
-
-                <p class="custom-project-desc">
-                  A mobile application designed to provide users with an
-                  organized and accessible knowledge hub through an interactive
-                  and user-friendly interface.
-                </p>
-
-                <div class="custom-project-tags">
-                  <span class="custom-tag">Flutter</span>
-                  <span class="custom-tag">Dart</span>
-                  <span class="custom-tag">Firebase</span>
-                </div>
-
-                <button
-                  type="button"
-                  class="custom-project-btn"
-                  id="open-modal-btn"
-                >
-                  View Project
-                </button>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <div
-        class="project-modal"
-        id="project-modal"
-        aria-hidden="true"
-        role="dialog"
-      >
-        <div class="modal-dialog glass">
-          <!-- Close Button -->
-          <button class="modal-close" id="modal-close" aria-label="Close modal">
-            &times;
-          </button>
-
-          <div class="modal-header">
-            <h3 class="modal-title">Mobile Knowledge Hub Screenshots</h3>
-            <span class="slide-counter" id="slide-counter">1 / 8</span>
-          </div>
-
-          <!-- Slider Area -->
-          <div class="slider-wrapper">
-            <button
-              class="slider-btn prev-btn"
-              id="prev-slide"
-              aria-label="Previous Slide"
+          </p>
+          <div class="btn-group">
+            <a href="#projects" class="btn btn-accent">Explore Work</a>
+            <a href="#contact" class="btn btn-glass">Let's Connect</a>
+            <a href="resume/RESUME.pdf" target="_blank" class="btn btn-text"
+              >Resume (PDF) ↗</a
             >
-              &#10094;
-            </button>
+          </div>
+        </div>
 
-            <div class="slider-track" id="slider-track">
-              <div class="slide active">
-                <img src="assets/frontpage.png" alt="Front Page Screenshot" />
-                <div class="slide-caption">Front Page</div>
-              </div>
+        <div class="hero-right glass">
+          <div class="avatar-frame">
+            <img
+              src="assets/mawel.png"
+              alt="Carlos Manuel Castillo"
+              class="avatar"
+            />
+          </div>
+          <div class="hero-card-meta">
+            <h3>Carlos Manuel Castillo</h3>
+            <span class="accent role-text">Junior Front-End Developer</span>
+            <small>📍 Bulacan, Philippines</small>
+          </div>
+        </div>
+      </section>
 
-              <div class="slide">
-                <img src="assets/PLAY.jpg" alt="Play Page Screenshot" />
-                <div class="slide-caption">Play Page</div>
-              </div>
+      <!-- =================================================
+           ABOUT SECTION
+           ================================================= -->
+      <section class="section reveal" id="about">
+        <div class="section-head">
+          <span class="section-label">// ABOUT ME</span>
+          <h2>Background &amp; <span class="accent">Capabilities</span></h2>
+        </div>
 
-              <div class="slide">
-                <img src="assets/ALMANAC.jpg" alt="Almanac Page Screenshot" />
-                <div class="slide-caption">Almanac Page</div>
-              </div>
-
-              <div class="slide">
-                <img
-                  src="assets/setting1.png"
-                  alt="Settings Page Screenshot 1"
-                />
-                <div class="slide-caption">Setting Page 1</div>
-              </div>
-
-              <div class="slide">
-                <img src="assets/setting.png" alt="Settings Screenshot" />
-                <div class="slide-caption">Setting Page</div>
-              </div>
-
-              <div class="slide">
-                <img
-                  src="assets/dashb1.png"
-                  alt="Dashboard Page 1 Screenshot 1"
-                />
-                <div class="slide-caption">Dashboard Page 1</div>
-              </div>
-
-              <div class="slide">
-                <img src="assets/dashb.png" alt="Dashboard Page Screenshot" />
-                <div class="slide-caption">Dashboard Page</div>
-              </div>
-
-              <div class="slide">
-                <img
-                  src="assets/dashb2.png"
-                  alt="Dashboard Page2 Screenshot 2"
-                />
-                <div class="slide-caption">Dashboard Page 2</div>
-              </div>
-            </div>
-
-            <button
-              class="slider-btn next-btn"
-              id="next-slide"
-              aria-label="Next Slide"
-            >
-              &#10095;
-            </button>
+        <div class="grid grid-2">
+          <div class="glass card">
+            <span class="card-badge">🚀 Background</span>
+            <h3>Committed to Quality Code</h3>
+            <p>
+            I'm a junior front-end web developer focused on HTML, CSS, and
+              JavaScript. I enjoy building responsive interfaces and improving
+              my understanding of web development through hands-on practice.
+              I'm also interested in IT support, troubleshooting, and learning
+              how web technologies work in real-world environments.
+            </p>
           </div>
 
-          <!-- Slider Dots / Indicators -->
-          <div class="slider-dots" id="slider-dots"></div>
+          <div class="glass card meta-box">
+            <span class="card-badge">🎯 Quick Details</span>
+            <div class="meta-row">
+              <span>Location:</span>
+              <strong>Bulacan, Philippines </strong>
+            </div>
+            <div class="meta-row">
+              <span>Core Stack:</span>
+              <strong>HTML5 • CSS3 • JavaScript </strong>
+            </div>
+           
+            <div class="meta-row">
+              <span>Availability:</span>
+              <strong class="accent"
+                >Open for Junior Roles &amp; Opportunities</strong
+              >
+            </div>
+          </div>
         </div>
+      </section>
+
+      <!-- =================================================
+           SKILLS SECTION
+           ================================================= -->
+ <section class="section reveal" id="skills">
+  <div class="section-head">
+    <span class="section-label">// TECHNICAL STACK</span>
+    <h2>My Technical <span class="accent">Toolbox</span></h2>
+  </div>
+
+  <div class="grid grid-3">
+    <div class="glass card">
+      <span class="accent mono num">01</span>
+      <h3>Front-End Web</h3>
+    <p>
+      Building responsive and interactive web interfaces using semantic HTML,
+      modern CSS, JavaScript, DOM manipulation, and responsive design practices.
+      </p>
+      <div class="tags">
+      <span class="tag">HTML5</span>
+      <span class="tag">CSS3</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">DOM</span>
+      <span class="tag">Responsive Design</span>>
       </div>
+    </div>
+
+    <div class="glass card">
+      <span class="accent mono num">02</span>
+      <h3>Mobile &amp; Database</h3>
+      <p>
+         Working with APIs, data, version control, and modern development
+      workflows to build and maintain web projects.
+      <div class="tags">
+      <span class="tag">Git</span>
+      <span class="tag">GitHub</span>
+      </div>
+    </div>
+
+    <div class="glass card">
+      <span class="accent mono num">03</span>
+      <h3>IT &amp; Systems</h3>
+      <p>
+        Experience with hardware diagnostics, system assembly, basic network
+        configurations, troubleshooting, and Windows system setup.
+      </p>
+      <div class="tags">
+        <span class="tag">PC Hardware</span>
+        <span class="tag">Diagnostics</span>
+        <span class="tag">Networking</span>
+        <span class="tag">Windows Setup</span>
+      </div>
+    </div>
+  </div>
+</section>
 
       <!-- =================================================
-     SECTION 5 — CONTACT
-     ================================================= -->
-      <section class="contact section" id="contact">
-        <div class="container contact-container">
-          <div class="section-header">
-            <h2 class="section-title">Let's <span>Connect</span></h2>
-            <p class="section-subtitle">
-              Have a question, job opportunity, or project idea? Feel free to
-              reach out! I'm currently open to opportunities where I can
-              continue learning, improve my skills, and contribute to real-world
-              projects.
-            </p>
+           PROJECT SECTION
+           ================================================= -->
+      <section class="section reveal" id="projects">
+        <div class="section-head">
+          <span class="section-label">// FEATURED PROJECT</span>
+          <h2>Selected <span class="accent">Case Study</span></h2>
+        </div>
+
+        <div class="glass project-container">
+          <div class="project-preview glass">
+            <img src="assets/frontpage.png" alt="Mobile Knowledge Hub App" />
           </div>
 
-          <div class="contact-grid">
-            <div class="contact-details glass">
-              <div class="contact-info-grid">
-                <!-- NAME -->
-                <div class="contact-item">
-                  <span class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
-</svg></span>
-                  <div>
-                    <strong>Name</strong>
-                    <p>Carlos Manuel C. Castillo</p>
-                  </div>
-                </div>
+          <div class="project-details">
+            <span class="tag">Cross-Platform Mobile App</span>
+            <h3>Mobile Knowledge Hub</h3>
+            <p>
+              A full-featured mobile knowledge application built with Flutter
+              and Firebase. Includes interactive quiz modules, an almanac
+              reference directory, progress dashboards, and user settings.
+            </p>
 
-                <!-- FACEBOOK -->
-                <div class="contact-item">
-                  <span class="contact-icon facebook-icon">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-</svg>
-                  </span>
-                  <div>
-                    <strong>Facebook</strong>
-                    <p>
-                      <a
-                        href="https://www.facebook.com/MorgianaXV"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Carlos Manuel Castillo
-                      </a>
-                    </p>
-                  </div>
-                </div>
-
-                <!-- GMAIL -->
-                <div class="contact-item">
-                  <span class="contact-icon facebook-icon">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-</svg>  
-                  </span>
-                  <div>
-                    <strong>Gmail</strong>
-                    <p>
-                      <a href="mailto:Mauelcastillo215@gmail.com">
-                        Mauelcastillo215@gmail.com
-                      </a>
-                    </p>
-                  </div>
-                </div>
-
-                <!-- LOCATION -->
-                <div class="contact-item">
-                  <span class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
-  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-</svg></span>
-                  <div>
-                    <strong>Location</strong>
-                    <a
-                      href="https://www.google.com/maps/place/Santa+Rita+Bata,+San+Miguel,+Bulacan/@15.1271175,120.9648578,15z/data=!3m1!4b1!4m6!3m5!1s0x33971cbee5eccc0b:0x1f29bb774a270738!8m2!3d15.1278987!4d120.9732917!16s%2Fg%2F11fyxc_0h7?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      My Location
-                    </a>
-                  </div>
-                </div>
-
-                <!-- NUMBER -->
-                <div class="contact-item">
-                  <span class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
-  <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-  <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-</svg></span>
-                  <div>
-                    <strong>Number</strong>
-                    <p>+63 965 672 0914</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- RESUME -->
-              <div class="resume-container">
-                <a
-                  href="resume/RESUME.pdf"
-                  class="resume-btn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  📄 View My Resume
-                </a>
-
-                <a
-                  href="resume/RESUME.pdf"
-                  class="resume-btn secondary"
-                  download
-                >
-                  ⬇️ Download Resume
-                </a>
-              </div>
+            <div class="tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Dart</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Mobile UI</span>
             </div>
+
+            <div class="project-action-wrap">
+              <button type="button" class="btn btn-accent" id="open-modal">
+                View Screenshots (8 Screens)
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+           CONTACT SECTION
+           ================================================= -->
+      <section class="section reveal" id="contact">
+        <div class="section-head">
+          <span class="section-label">// GET IN TOUCH</span>
+          <h2>Let's Start a <span class="accent">Conversation</span></h2>
+        </div>
+
+        <div class="glass contact-container">
+          <div class="contact-bio">
+            <h3>Ready to collaborate.</h3>
+            <p>
+              I am actively seeking junior front-end developer roles, technical
+              support positions, or freelance work. Reach out directly through
+              any of the channels below:
+            </p>
+            <div class="btn-group">
+              <a href="resume/RESUME.pdf" target="_blank" class="btn btn-accent"
+                >View Resume (PDF)</a
+              >
+              <a href="resume/RESUME.pdf" download class="btn btn-glass"
+                >Download Copy</a
+              >
+            </div>
+          </div>
+
+          <div class="contact-list">
+            <div
+              class="glass contact-item"
+              data-copy="Mauelcastillo215@gmail.com"
+            >
+              <small>EMAIL (CLICK TO COPY)</small>
+              <strong>Mauelcastillo215@gmail.com</strong>
+              <span class="copy-tag">📋 Copy</span>
+            </div>
+
+            <div class="glass contact-item" data-copy="+639656720914">
+              <small>PHONE / SMS (CLICK TO COPY)</small>
+              <strong>+63 965 672 0914</strong>
+              <span class="copy-tag">📋 Copy</span>
+            </div>
+
+            <a
+              href="https://www.facebook.com/MorgianaXV"
+              target="_blank"
+              rel="noreferrer"
+              class="glass contact-item"
+            >
+              <small>FACEBOOK PROFILE</small>
+              <strong>Carlos Manuel Castillo</strong>
+              <span class="link-tag">Open ↗</span>
+            </a>
+
+            <a
+              href="https://www.google.com/maps/place/Santa+Rita+Bata,+San+Miguel,+Bulacan"
+              target="_blank"
+              rel="noreferrer"
+              class="glass contact-item"
+            >
+              <small>LOCATION</small>
+              <strong>San Miguel, Bulacan, PH</strong>
+              <span class="link-tag">View Map ↗</span>
+            </a>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- =================================================
-         SECTION 6 — FOOTER
-         ================================================= -->
-    <footer class="footer">
-      <div class="container footer-container">
-        <p>&copy; 2026 Carlos Manuel Castillo Junior Web Developer.</p>
+    <!-- Modal Slider -->
+    <div class="modal" id="modal">
+      <div class="modal-dialog glass">
+        <div class="modal-bar">
+          <h3>Mobile Knowledge Hub Screenshots</h3>
+          <button class="modal-close" id="modal-close" aria-label="Close modal">
+            &times;
+          </button>
+        </div>
+        <div class="slider glass">
+          <button class="s-btn prev" id="prev" aria-label="Previous slide">
+            &#10094;
+          </button>
+          <div class="slides">
+            <div class="slide active">
+              <img src="assets/frontpage.png" alt="Front Page" />
+              <p>01. Front Page (Welcome)</p>
+            </div>
+            <div class="slide">
+              <img src="assets/PLAY.jpg" alt="Play Page" />
+              <p>02. Interactive Play / Quiz</p>
+            </div>
+            <div class="slide">
+              <img src="assets/ALMANAC.jpg" alt="Almanac" />
+              <p>03. Almanac Directory</p>
+            </div>
+            <div class="slide">
+              <img src="assets/setting1.png" alt="Setting 1" />
+              <p>04. Settings View 1</p>
+            </div>
+            <div class="slide">
+              <img src="assets/setting.png" alt="Setting 2" />
+              <p>05. Settings View 2</p>
+            </div>
+            <div class="slide">
+              <img src="assets/dashb1.png" alt="Dashboard 1" />
+              <p>06. User Progress Dashboard</p>
+            </div>
+            <div class="slide">
+              <img src="assets/dashb.png" alt="Dashboard 2" />
+              <p>07. Activity Details</p>
+            </div>
+            <div class="slide">
+              <img src="assets/dashb2.png" alt="Dashboard 3" />
+              <p>08. Visual Analytics</p>
+            </div>
+          </div>
+          <button class="s-btn next" id="next" aria-label="Next slide">
+            &#10095;
+          </button>
+        </div>
+        <div class="modal-footer"><span id="slide-num">1 / 8</span></div>
       </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer container">
+      <p>
+        &copy; 2026 Carlos Manuel Castillo. 
+      </p>
     </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">Copied to clipboard!</div>
 
     <script src="script.js"></script>
   </body>
